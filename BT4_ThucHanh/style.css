@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+}
+.form-container {
+    width: 600px;
+    margin: 20px auto;
+    border: 10px solid #EEEEEE;
+    padding: 20px 50px;
+}
+
+h2 {
+    border-bottom: 1px solid #999;
+    font-size: 16px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.form-group label {
+    margin-left: 10px;
+    width: 150px;
+    font-weight: bold;
+}
+.form-group input[type="text"], .form-group input[type="email"] {
+    flex: 1;
+    padding: 3px;
+    border: 1px solid black;
+    border-top: 2px solid black;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+.radio-option{
+    display: flex;
+    align-items: center;
+}
+
+.notes-box {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #f9f9f9;
+}
+.ntb {
+    padding-right: 112px;
+    margin: 70px 0px;
+}
+
+.captcha {
+    font-family: 'Courier New',
+    monospace; font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+
+.footer-buttons {
+    border-top: 1px solid #999;
+    padding-top: 10px;
+    text-align: right;
+}
+button.submit {
+    background-color: #444;
+    color: white; border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+button.cancel {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
