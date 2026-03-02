@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    width: 1000px;
+    border: 3px solid #b3e5fc;
+    padding: 60px;
+    margin-bottom: 50px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main-header h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 5px 0;
+    color: #333;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.testimonial-card {
+    width: 350px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.testimonial-card h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.testimonial-card .quote {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.author-info .name {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.author-info .title {
+    color: #4285f4;
+    font-size: 13px;
+    margin: 0;
+}
+
+.text-description {
+    flex: 1;
+}
+
+.text-description p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
