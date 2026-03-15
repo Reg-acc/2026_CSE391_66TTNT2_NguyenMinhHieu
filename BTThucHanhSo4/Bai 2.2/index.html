@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="orderForm">
+            <h2>📦 Đặt Hàng Trực Tuyến</h2>
+
+            <div class="form-group">
+                <label>Sản phẩm</label>
+                <select id="product">
+                    <option value="">-- Chọn sản phẩm --</option>
+                    <option value="laptop">Laptop Gaming (25.000.000đ)</option>
+                    <option value="phone">Smartphone (12.000.000đ)</option>
+                    <option value="headphone">Tai nghe Bluetooth (1.500.000đ)</option>
+                </select>
+                <span class="error" id="productError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Số lượng (1-99)</label>
+                <input type="number" id="quantity" value="1" min="1" max="99">
+                <span class="error" id="quantityError"></span>
+            </div>
+
+            <div class="total-box">
+                Tổng cộng: <span id="totalDisplay">0</span> VNĐ
+            </div>
+
+            <div class="form-group">
+                <label>Ngày giao hàng</label>
+                <input type="date" id="deliveryDate">
+                <span class="error" id="deliveryDateError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Địa chỉ giao hàng</label>
+                <input type="text" id="address" placeholder="Ít nhất 10 ký tự">
+                <span class="error" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Ghi chú</label>
+                <textarea id="note" rows="3" placeholder="Yêu cầu thêm..."></textarea>
+                <div class="char-count"><span id="currentChar">0</span>/200</div>
+                <span class="error" id="noteError"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Phương thức thanh toán</label>
+                <div class="radio-group">
+                    <input type="radio" name="payment" value="COD"> COD
+                    <input type="radio" name="payment" value="Chuyển khoản"> Chuyển khoản
+                    <input type="radio" name="payment" value="Ví điện tử"> Ví điện tử
+                </div>
+                <span class="error" id="paymentError"></span>
+            </div>
+
+            <button type="submit">Tiến hành đặt hàng</button>
+        </form>
+
+        <div id="confirmModal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Xác nhận đơn hàng</h3>
+                <div id="orderSummary"></div>
+                <div class="modal-buttons">
+                    <button id="btnConfirm" class="btn-success">Xác nhận</button>
+                    <button id="btnCancel" class="btn-danger">Hủy</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="finalSuccess" class="hidden success-msg">
+            🎉 Đặt hàng thành công! Đơn hàng của bạn đang được xử lý.
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

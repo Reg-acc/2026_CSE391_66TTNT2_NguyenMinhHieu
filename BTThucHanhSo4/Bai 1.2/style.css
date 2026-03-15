@@ -1,0 +1,49 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    line-height: 1.6; 
+}
+.input-group { 
+    margin-bottom: 15px; 
+}
+input { 
+    padding: 8px; 
+    margin-right: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 10px; text-align: 
+    center; 
+}
+th { 
+    background-color: #f4f4f4; 
+}
+.bg-yellow { 
+    background-color: #fff9c4; 
+}
+.btn-delete { 
+    background: #ff5252; 
+    color: white; border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+}
+.summary { 
+    margin-top: 15px; 
+    font-weight: bold; 
+    font-size: 1.1em; 
+    color: #333; 
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
